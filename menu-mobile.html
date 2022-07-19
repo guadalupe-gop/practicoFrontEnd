@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --very-light-pink: #79DAE8;
+            --white: #FFFFFF;
+            --text-input-field: #E8F9FD;
+            /* --black: #000000; */
+            --black: #2155CD;
+            --hospital-green: #0AA1DD;
+            --dark: #232830;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .mobile-menu {
+            padding: 24px;
+        }
+
+        .mobile-menu a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+            /* margin-bottom: 24px; */
+            line-height: 20px;
+        }
+
+        .mobile-menu ul {
+            padding: 0;
+            margin: 24px 0 0;
+            list-style: none;
+        }
+
+        .mobile-menu ul:nth-child(1) {
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 24px;
+        }
+
+        .mobile-menu ul:nth-child(3) li {
+            margin: 0;
+        }
+
+        .mobile-menu .email {
+            font-size: var(--sm);
+            font-weight: 300;
+        }
+
+        .mobile-menu .sign-out {
+            font-size: var(--sm);
+            color: var(--hospital-green);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="">CATEGORIES</a></li>
+            <li><a href="">All</a></li>
+            <li><a href="">Patente</a></li>
+            <li><a href="">Generico</a></li>
+            <li><a href="">Perfumeria</a></li>
+            <li><a href="">Material de Curación</a></li>
+            <li><a href="">Uso Hospitalario</a></li>
+            <li><a href="">Otros</a></li>
+        </ul>
+        <ul>
+            <li><a href="">My orders</a></li>
+            <li><a href="">My account</a></li>
+        </ul>
+        <ul>
+            <li><a href="" class="email">fpiedad@example.com</a></li>
+            <li><a href="" class="sign-out">Sing out</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
