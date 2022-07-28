@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --very-light-pink: #79DAE8;
+            --white: #FFFFFF;
+            --text-input-field: #E8F9FD;
+            /* --black: #000000; */
+            --black: #2155CD;
+            --hospital-green: #0AA1DD;
+            --dark: #232830;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+
+        }
+
+        .product-details {
+            width: 360px;
+            padding: 24px;
+            position: absolute;
+            box-sizing: border-box;
+            right: 0;
+        }
+
+        .title-container {
+            display: flex;
+
+        }
+
+        .title-container img {
+            transform: rotate(180deg);
+            margin-right: 14px;
+
+        }
+
+        .title {
+            font-size: var(--lg);
+            /* margin-bottom: 30px; */
+            font-weight: bold;
+        }
+
+        .my-order-content {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .order {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 16px;
+            background-color: var(--text-input-field);
+            margin-bottom: 24px;
+            border-radius: 10px;
+            padding: 0 24px;
+            align-items: center;
+        }
+
+        .order p:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .order p:nth-child(2) {
+            text-align: end;
+            font-weight: bold;
+        }
+
+        .order p span:nth-child(1) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+
+        .shopping-cart {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto auto;
+            gap: 16px;
+            margin-bottom: 24px;
+            align-items: center;
+        }
+
+        .shopping-cart figure {
+            margin: 0;
+        }
+
+        .shopping-cart figure img {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .shopping-cart p:nth-child(2) {
+            color: var(--very-light-pink);
+        }
+
+        .shopping-cart p:nth-child(3) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+
+        .primary-button {
+            width: 100%;
+            height: 50px;
+            border: none;
+            border-radius: 8px;
+            color: var(--white);
+            font-size: var(--md);
+            font-weight: bold;
+            background-color: var(--hospital-green);
+            cursor: pointer;
+        }
+
+        @media (max-width:640px) {
+            .product-details {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="product-details">
+        <div class="title-container">
+            <img src="./assets/logo/flechita.svg" alt="regresar">
+            <p class="title">Carrito de compra</p>
+        </div>
+        <div class="my-order-content">
+
+        </div>
+        <div class="shopping-cart">
+            <figure>
+                <img src="https://images.pexels.com/photos/5446297/pexels-photo-5446297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="medicine">
+            </figure>
+            <p>Medicine</p>
+            <p>$325.00</p>
+            <img src="./assets/logo/icon_close.png" alt="delete">
+        </div>
+        <div class="shopping-cart">
+            <figure>
+                <img src="https://images.pexels.com/photos/5446297/pexels-photo-5446297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="medicine">
+            </figure>
+            <p>Medicine</p>
+            <p>$325.00</p>
+            <img src="./assets/logo/icon_close.png" alt="delete">
+        </div>
+        <div class="shopping-cart">
+            <figure>
+                <img src="https://images.pexels.com/photos/5446297/pexels-photo-5446297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="medicine">
+            </figure>
+            <p>Medicine</p>
+            <p>$325.00</p>
+            <img src="./assets/logo/icon_close.png" alt="delete">
+        </div>
+        <div class="shopping-cart">
+            <figure>
+                <img src="https://images.pexels.com/photos/5446297/pexels-photo-5446297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="medicine">
+            </figure>
+            <p>Medicine</p>
+            <p>$325.00</p>
+            <img src="./assets/logo/icon_close.png" alt="delete">
+        </div>
+        <div class="order">
+            <p>
+                <span>Total</span>
+            </p>
+            <p>$560.00</p>
+        </div>
+
+        <button class="primary-button">
+            Checkout
+        </button>
+
+    </aside>
+</body>
+
+</html>
